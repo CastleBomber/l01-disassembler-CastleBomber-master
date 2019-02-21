@@ -1,3 +1,14 @@
+/**
+**************************************************************
+					CS107 Assembly
+
+					Lab 01 - Disassembler
+
+					Date:   [13 FEB 2019]
+ 	Authors: [CastleBomber && Leonard Euler && Dr. Nevins]
+**************************************************************
+*/
+
 package edu.sbcc.cs107;
 
 /**
@@ -15,10 +26,10 @@ public class Disassembler {
 	 * Extracts the register operand from a halfword.
 	 * 
 	 * The register operand (e.g. r0) is used by many mnemonics
-	 * and is embedded in the data halfword.
+	 * && is embedded in the data halfword.
 	 * It's position is specified by the LSB && MSB.
-	 * This value is
-	 * extracted and concatenated w/ "r" to give us the desired register.
+	 * This value is extracted && concatenated w/ "r"
+	 * to give us the desired register.
 	 * 
 	 * @param hw Halfword that contains the machine code data.
 	 * @param lsBitPosition Encoded register value (LSB)
@@ -59,8 +70,9 @@ public class Disassembler {
 	 * 
 	 * The halfword is decoded into its corresponding
 	 * mnemonic and any optional operands.
-	 * The return
-	 * value is a formatted string with an 8 character wide field
+	 *
+	 * The return value is a formatted string
+	 * with an 8 character wide field
 	 * for the mnemonic (left justified) a
 	 * single space and then any operands.
 	 * 
