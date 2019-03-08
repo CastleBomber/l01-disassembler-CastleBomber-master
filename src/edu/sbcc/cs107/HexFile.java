@@ -5,8 +5,11 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 import static org.apache.commons.io.FileUtils.*;
+import java.util.ListIterator;
+import java.util.List;
 
 /**
  * @author Leonard Euler
@@ -21,11 +24,9 @@ public class HexFile {
 	 * This is where you load the hex file.
 	 * By making it an ArrayList you can easily traverse it in order.
 	 */
-	private ArrayList<String> hexFile = null; // not fully constructed
-	
-	/* Add */
-	// which variables should i put here?
-
+	private ArrayList<String> hexFile = null; // full arry w all lines
+	private ArrayList<String> hexFileDataType = null; // hexFile minus everything not type: Data
+	private ArrayList<Halfword> halfWords_List = null;
 
 	/**
 	 * Constructor that loads the .hex file.
@@ -34,26 +35,23 @@ public class HexFile {
 	 * @throws FileNotFoundException
 	 */
 	public HexFile(String hexFileName) throws FileNotFoundException {
-		// open up "sample1.hex"
-		// turn contents into str, parse
-		// add to arrayList
 		try {
 			File file = new File(hexFileName);
 			String longText = FileUtils.readFileToString(file, "UTF-8");
-			System.out.print(";)");
-			System.out.print(longText);
 
+			String[] arrayOfLines = longText.split("\\r?\\n");
+			hexFile = new ArrayList<String>();
 
+			for(String line : arrayOfLines){
+				hexFile.add(line);
+			} // we have hexFile, an arryLst w/ strings of which are tbd to live
 
-
-			
+			makeDataTypeArrayListFromHexFile();
+			makeHalfWordsFromDataList();
 		}
 		catch (Exception IO){
 			System.out.println(IO.getMessage());
 		}
-
-
-
 	}
 
 	/**
@@ -133,6 +131,23 @@ public class HexFile {
 	}
 
 	/**
+	 * Gets all the data
+	 *
+	 * Will assume each record length is 16 bytes
+	 *
+	 *
+	 * @param Hex file record (one line).
+	 * @return data_dec decimal format
+	 */
+	public int getDataDecimal(String record){
+		String data_hexStr = record.substring(9, 41);
+		int data_dec = Integer.parseInt(data_hexStr, 16);
+		//////System.out.println("~+" + data_dec);
+
+		return data_dec;
+	}
+
+	/**
 	 * Returns next halfword data byte
 	 * 
 	 * This f(x) will extract next halfword from Hex file.
@@ -153,12 +168,49 @@ public class HexFile {
 	 * @return Next halfword.
 	 */
 	public Halfword getNextHalfword() {
-		// find way to access file
-		// take line by line, search for record type: 00-data
-		//		add "data" to arrayList
-		//		anything else, toss
+		ListIterator<Halfword> it = halfWords_List.listIterator();
+		Halfword _hw = null;
 
+		while(it.hasNext()){
+			_hw = it.next();
+			return _hw;
+		}
+		return _hw;
+	}
 
-		return null;
+	/**
+	 * Our HexFile is an arrayList of strings of MANY TYPES
+	 * We need new arrayList to have just type: DATA
+	 *
+	 */
+	public void makeDataTypeArrayListFromHexFile(){
+		hexFileDataType = new ArrayList<String>();
+
+		for(int i = 0; i < hexFile.size(); i++){
+				String lineOf = hexFile.get(i);
+				String typeCheck = lineOf.substring(7,9);
+				if(typeCheck.equals("00")){
+					hexFileDataType.add(lineOf);
+				}
+		}
+	}
+
+	/**
+	 * array list of halfwords
+	 * "public Halfword(int address, int data) "
+	 *
+	 */
+	public void makeHalfWordsFromDataList(){
+		int address = 0;
+		int data = 0; // 00000000 0400
+		halfWords_List = new ArrayList<Halfword>();
+
+		for(int x = 0; x < hexFileDataType.size(); x++){
+			Halfword hw = new Halfword(
+					getAddressOfRecord(hexFileDataType.get(x)),
+					getDataDecimal(hexFileDataType.get(x)));
+			halfWords_List.add(hw);
+		}
+
 	}
 }

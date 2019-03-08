@@ -41,10 +41,6 @@ public class Disassembler {
 
 
 
-
-
-
-
 		return "r3";
 	}
 	
@@ -60,7 +56,7 @@ public class Disassembler {
 	 * @return Immediate field designation (e.g. #12)
 	 */
 	public String getImmediate(Halfword hw, int lsBitPosition, int msBitPosition) {
-		/* Your code here */
+		/* */
 		return "Replace this";
 	}
 
@@ -80,7 +76,7 @@ public class Disassembler {
 	 * @return Formatted string containing the mnemonic and any operands.
 	 */
 	public String dissassembleToString(Halfword hw) {
-		/* Your code here */
+		/* */
 		return "Replace this";
 	}
 	
