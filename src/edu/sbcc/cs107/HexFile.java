@@ -247,17 +247,30 @@ public class HexFile {
 			offset = row * hwBytes;
 			for(int col = 0; col < wordChars; col++) {
 				jump = col * wordBytes;
-				data = hexFileTypeData.get(row).substring(9+jump, 13+jump);
+				data = flip(hexFileTypeData.get(row).substring(9+jump, 13+jump));
 
-				Halfword hw = new Halfword(start + offset,
-						getBaseTenData(data));
-				System.out.println(start + offset);
-				System.out.println(getBaseTenData(data));
+				Halfword hw = new Halfword(start + offset, getBaseTenData(data));
 
 
 				halfWords.add(hw);
 			}
 		}
 		return halfWords;
+	}
+
+	/**
+	 * MSB, LSB mixup, flip the bytes around
+	 *
+	 * @param unordered
+	 * @return flipped
+	 */
+	public String flip(String unordered){
+		String flipped = "";
+		String beg = unordered.substring(0,2);
+		String end = unordered.substring(2,4);
+
+		flipped = end + beg;
+
+		return flipped;
 	}
 }
