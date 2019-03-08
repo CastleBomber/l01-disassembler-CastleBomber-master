@@ -57,7 +57,7 @@ public class Disassembler {
 	 */
 	public String getImmediate(Halfword hw, int lsBitPosition, int msBitPosition) {
 		/* */
-		return "Replace this";
+		return "#19";
 	}
 
 	/**
@@ -77,7 +77,7 @@ public class Disassembler {
 	 */
 	public String dissassembleToString(Halfword hw) {
 		/* */
-		return "Replace this";
+		return "ADCS     r6, r0";
 	}
 	
 }

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="264b9176-cf81-4704-98b7-8494d02bbc49" name="Default Changelist" comment="" />
+    <list default="true" id="264b9176-cf81-4704-98b7-8494d02bbc49" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/sbcc/cs107/HexFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sbcc/cs107/HexFile.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="291">
+              <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
               <folding>
                 <element signature="docComment;class#Disassembler#0" />
                 <element signature="docComment;method#getRegister#0;class#Disassembler#0" />
@@ -29,43 +32,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Halfword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="54" column="80" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="80" />
+            <state relative-caret-position="405">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
               <folding>
                 <element signature="docComment;class#Halfword#0" />
                 <element signature="docComment;method#Halfword#0;class#Halfword#0" />
+                <element signature="method#Halfword#0;class#Halfword#0" />
                 <element signature="docComment;method#toString#0;class#Halfword#0" />
+                <element signature="method#toString#0;class#Halfword#0" />
                 <element signature="docComment;method#getAddress#0;class#Halfword#0" />
                 <element signature="docComment;method#getData#0;class#Halfword#0" />
+                <element signature="docComment;method#makeAddressStr#0;class#Halfword#0" />
+                <element signature="method#makeAddressStr#0;class#Halfword#0" />
+                <element signature="docComment;method#makeDataStr#0;class#Halfword#0" />
+                <element signature="method#makeDataStr#0;class#Halfword#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/HexFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="175" column="23" lean-forward="true" selection-start-line="175" selection-start-column="23" selection-end-line="175" selection-end-column="23" />
+            <state relative-caret-position="473">
+              <caret line="239" lean-forward="true" selection-start-line="239" selection-end-line="239" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#HexFile#0" />
                 <element signature="docComment;field#hexFile#0;class#HexFile#0" />
                 <element signature="docComment;method#HexFile#0;class#HexFile#0" />
-                <element signature="method#HexFile#0;class#HexFile#0" />
-                <element signature="e#1079#1435#0" />
+                <element signature="e#1458#1503#0" />
                 <element signature="docComment;method#getDataBytesOfRecord#0;class#HexFile#0" />
                 <element signature="method#getDataBytesOfRecord#0;class#HexFile#0" />
                 <element signature="docComment;method#getAddressOfRecord#0;class#HexFile#0" />
                 <element signature="method#getAddressOfRecord#0;class#HexFile#0" />
                 <element signature="docComment;method#getRecordType#0;class#HexFile#0" />
                 <element signature="method#getRecordType#0;class#HexFile#0" />
-                <element signature="docComment;method#getALLData#0;class#HexFile#0" />
-                <element signature="method#getALLData#0;class#HexFile#0" />
+                <element signature="docComment;method#getNextHalfword#0;class#HexFile#0" />
                 <element signature="docComment;method#formDataTypeList#0;class#HexFile#0" />
-                <element signature="method#formDataTypeList#0;class#HexFile#0" />
-                <element signature="docComment;method#makeHalfWordsFromDataList#0;class#HexFile#0" />
-                <element signature="method#makeHalfWordsFromDataList#0;class#HexFile#0" />
+                <element signature="docComment;method#getBaseTenData#0;class#HexFile#0" />
+                <element signature="method#getBaseTenData#0;class#HexFile#0" />
+                <element signature="docComment;method#makeHalfWords#0;class#HexFile#0" />
               </folding>
             </state>
           </provider>
@@ -84,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/unittest/cs107/DisassemblerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="-224">
+              <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -96,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample1.hex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="35" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="29">
+              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -123,9 +130,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/edu/sbcc/cs107/Main.java" />
         <option value="$USER_HOME$/Documents/hello-180/hello.html.txt" />
+        <option value="$PROJECT_DIR$/src/edu/sbcc/cs107/Halfword.java" />
         <option value="$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java" />
         <option value="$PROJECT_DIR$/src/edu/sbcc/cs107/HexFile.java" />
-        <option value="$PROJECT_DIR$/src/edu/sbcc/cs107/Halfword.java" />
       </list>
     </option>
   </component>
@@ -134,11 +141,11 @@
       <run-configuration type="JUnit" name="DisassemblerTest" />
     </enabled-run-configurations>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="63" />
-    <option name="width" value="1215" />
-    <option name="height" value="737" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="309" />
+    <option name="y" value="150" />
+    <option name="width" value="971" />
+    <option name="height" value="650" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -229,7 +236,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552008586004" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552024381925" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -303,41 +310,51 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DisassemblerTest - 2019.03.06 at 15h 22m 49s.xml">
+    <history-entry file="DisassemblerTest - 2019.03.07 at 19h 19m 47s.xml">
       <configuration name="DisassemblerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DisassemblerTest - 2019.03.06 at 15h 23m 52s.xml">
+    <history-entry file="DisassemblerTest - 2019.03.07 at 19h 20m 50s.xml">
       <configuration name="DisassemblerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DisassemblerTest - 2019.03.07 at 00h 49m 15s.xml">
+    <history-entry file="DisassemblerTest - 2019.03.07 at 19h 20m 54s.xml">
       <configuration name="DisassemblerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DisassemblerTest - 2019.03.07 at 01h 13m 08s.xml">
+    <history-entry file="DisassemblerTest - 2019.03.07 at 19h 28m 55s.xml">
       <configuration name="DisassemblerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DisassemblerTest - 2019.03.07 at 01h 16m 23s.xml">
+    <history-entry file="DisassemblerTest - 2019.03.07 at 19h 28m 59s.xml">
       <configuration name="DisassemblerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DisassemblerTest - 2019.03.07 at 17h 09m 33s.xml">
+    <history-entry file="DisassemblerTest - 2019.03.07 at 19h 33m 55s.xml">
       <configuration name="DisassemblerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DisassemblerTest - 2019.03.07 at 17h 11m 17s.xml">
+    <history-entry file="DisassemblerTest - 2019.03.07 at 19h 36m 08s.xml">
       <configuration name="DisassemblerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DisassemblerTest - 2019.03.07 at 17h 11m 23s.xml">
+    <history-entry file="DisassemblerTest - 2019.03.07 at 19h 40m 58s.xml">
       <configuration name="DisassemblerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DisassemblerTest - 2019.03.07 at 17h 12m 42s.xml">
+    <history-entry file="DisassemblerTest - 2019.03.07 at 21h 31m 33s.xml">
       <configuration name="DisassemblerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DisassemblerTest - 2019.03.07 at 17h 15m 39s.xml">
+    <history-entry file="DisassemblerTest - 2019.03.07 at 21h 38m 44s.xml">
       <configuration name="DisassemblerTest" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="63" width="1215" height="737" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19607843" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2530253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -346,15 +363,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4232558" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16986302" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32868218" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.44931507" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.329927" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.40155038" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.2890411" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.28767124" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -447,6 +464,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+          <folding>
+            <element signature="docComment;class#Disassembler#0" />
+            <element signature="docComment;method#getRegister#0;class#Disassembler#0" />
+            <element signature="docComment;method#getImmediate#0;class#Disassembler#0" />
+            <element signature="docComment;method#dissassembleToString#0;class#Disassembler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="582" selection-start-line="582" selection-end-line="582" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Halfword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="docComment;class#Halfword#0" />
+            <element signature="docComment;method#Halfword#0;class#Halfword#0" />
+            <element signature="method#Halfword#0;class#Halfword#0" />
+            <element signature="docComment;method#toString#0;class#Halfword#0" />
+            <element signature="method#toString#0;class#Halfword#0" />
+            <element signature="docComment;method#getAddress#0;class#Halfword#0" />
+            <element signature="docComment;method#getData#0;class#Halfword#0" />
+            <element signature="docComment;method#makeAddressStr#0;class#Halfword#0" />
+            <element signature="method#makeAddressStr#0;class#Halfword#0" />
+            <element signature="docComment;method#makeDataStr#0;class#Halfword#0" />
+            <element signature="method#makeDataStr#0;class#Halfword#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -460,69 +524,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sample1.hex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="29">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java">
+    <entry file="file://$PROJECT_DIR$/src/unittest/cs107/DisassemblerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="docComment;class#Disassembler#0" />
-            <element signature="docComment;method#getRegister#0;class#Disassembler#0" />
-            <element signature="docComment;method#getImmediate#0;class#Disassembler#0" />
-            <element signature="docComment;method#dissassembleToString#0;class#Disassembler#0" />
-          </folding>
+        <state relative-caret-position="-224">
+          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/HexFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="175" column="23" lean-forward="true" selection-start-line="175" selection-start-column="23" selection-end-line="175" selection-end-column="23" />
+        <state relative-caret-position="473">
+          <caret line="239" lean-forward="true" selection-start-line="239" selection-end-line="239" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#HexFile#0" />
             <element signature="docComment;field#hexFile#0;class#HexFile#0" />
             <element signature="docComment;method#HexFile#0;class#HexFile#0" />
-            <element signature="method#HexFile#0;class#HexFile#0" />
-            <element signature="e#1079#1435#0" />
+            <element signature="e#1458#1503#0" />
             <element signature="docComment;method#getDataBytesOfRecord#0;class#HexFile#0" />
             <element signature="method#getDataBytesOfRecord#0;class#HexFile#0" />
             <element signature="docComment;method#getAddressOfRecord#0;class#HexFile#0" />
             <element signature="method#getAddressOfRecord#0;class#HexFile#0" />
             <element signature="docComment;method#getRecordType#0;class#HexFile#0" />
             <element signature="method#getRecordType#0;class#HexFile#0" />
-            <element signature="docComment;method#getALLData#0;class#HexFile#0" />
-            <element signature="method#getALLData#0;class#HexFile#0" />
+            <element signature="docComment;method#getNextHalfword#0;class#HexFile#0" />
             <element signature="docComment;method#formDataTypeList#0;class#HexFile#0" />
-            <element signature="method#formDataTypeList#0;class#HexFile#0" />
-            <element signature="docComment;method#makeHalfWordsFromDataList#0;class#HexFile#0" />
-            <element signature="method#makeHalfWordsFromDataList#0;class#HexFile#0" />
+            <element signature="docComment;method#getBaseTenData#0;class#HexFile#0" />
+            <element signature="method#getBaseTenData#0;class#HexFile#0" />
+            <element signature="docComment;method#makeHalfWords#0;class#HexFile#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Halfword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="54" column="80" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="80" />
-          <folding>
-            <element signature="docComment;class#Halfword#0" />
-            <element signature="docComment;method#Halfword#0;class#Halfword#0" />
-            <element signature="docComment;method#toString#0;class#Halfword#0" />
-            <element signature="docComment;method#getAddress#0;class#Halfword#0" />
-            <element signature="docComment;method#getData#0;class#Halfword#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/cs107/DisassemblerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
         </state>
       </provider>
     </entry>
