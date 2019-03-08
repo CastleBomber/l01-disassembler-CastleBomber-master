@@ -27,6 +27,9 @@ public class HexFile {
 	private ArrayList<String> hexFile = null; // full arry w all lines
 	private ArrayList<String> hexFileTypeData = null; // ALL type: Data
 	private ArrayList<Halfword> halfWords = null;
+	private static int hwBytes = 2; // two bytes
+	private static int wordBytes = 4; // four bytes
+	private static int wordChars = 8; // eight hex chars in word
 
 	/**
 	 * Constructor that loads the .hex file.
@@ -186,16 +189,10 @@ public class HexFile {
 	 */
 	public Halfword getNextHalfword() {
 		Halfword hw = null;
-		int startAddress = 0;
-
-		ListIterator<String> it = hexFileTypeData.listIterator();
+		ListIterator<Halfword> it = halfWords.listIterator();
 
 		while(it.hasNext()){
-			String tmp = it.next();
-			startAddress = getAddressOfRecord(tmp);
-			hw = new Halfword(
-					getAddressOfRecord(tmp),
-					getBaseTenData(tmp));
+			hw = it.next();
 			return hw;
 		}
 		return hw;
@@ -224,15 +221,11 @@ public class HexFile {
 	/**
 	 * Gets all the data, too much!!!!
 	 *
-	 * Will assume each record length is 16 bytes
 	 *
-	 *
-	 * @param record (one line).
+	 * @param data_hexStr (one line).
 	 * @return data_dec decimal format
 	 */
-	public int getBaseTenData(String record){
-		String data_hexStr = record.substring(9, 41);
-		//trim zeros!!!!
+	public int getBaseTenData(String data_hexStr){
 		int data_dec = Integer.parseInt(data_hexStr, 16);
 
 		return data_dec;
@@ -243,15 +236,27 @@ public class HexFile {
 	 *
 	 */
 	public ArrayList<Halfword> makeHalfWords() {
-		int address = 0;
-		int data = 0;
+		int start = 0;
+		String data = "";
+		int offset = 0;
+		int jump = 0; // halfWord jumps
 		halfWords = new ArrayList<Halfword>();
 
-		for (int x = 0; x < hexFileTypeData.size(); x++) {
-			Halfword hw = new Halfword(
-					getAddressOfRecord(hexFileTypeData.get(x)),
-					getBaseTenData(hexFileTypeData.get(x)));
-			halfWords.add(hw);
+		for(int row = 0; row < hexFileTypeData.size(); row++) {
+			start = getAddressOfRecord(hexFileTypeData.get(row));
+			offset = row * hwBytes;
+			for(int col = 0; col < wordChars; col++) {
+				jump = col * wordBytes;
+				data = hexFileTypeData.get(row).substring(9+jump, 13+jump);
+
+				Halfword hw = new Halfword(start + offset,
+						getBaseTenData(data));
+				System.out.println(start + offset);
+				System.out.println(getBaseTenData(data));
+
+
+				halfWords.add(hw);
+			}
 		}
 		return halfWords;
 	}
