@@ -30,6 +30,7 @@ public class HexFile {
 	private static int hwBytes = 2; // two bytes
 	private static int wordBytes = 4; // four bytes
 	private static int wordChars = 8; // eight hex chars in word
+	private int pos = 0; // called by getNextHW, tracks halfWords
 
 	/**
 	 * Constructor that loads the .hex file.
@@ -188,13 +189,8 @@ public class HexFile {
 	 * 					"00000012 0000"		{}
 	 */
 	public Halfword getNextHalfword() {
-		Halfword hw = null;
-		ListIterator<Halfword> it = halfWords.listIterator();
-
-		while(it.hasNext()){
-			hw = it.next();
-			return hw;
-		}
+		Halfword hw = halfWords.get(pos);
+		pos++;
 		return hw;
 	}
 
@@ -244,14 +240,11 @@ public class HexFile {
 
 		for(int row = 0; row < hexFileTypeData.size(); row++) {
 			start = getAddressOfRecord(hexFileTypeData.get(row));
-			offset = row * hwBytes;
 			for(int col = 0; col < wordChars; col++) {
+				offset = col * hwBytes;
 				jump = col * wordBytes;
 				data = flip(hexFileTypeData.get(row).substring(9+jump, 13+jump));
-
 				Halfword hw = new Halfword(start + offset, getBaseTenData(data));
-
-
 				halfWords.add(hw);
 			}
 		}
@@ -259,7 +252,7 @@ public class HexFile {
 	}
 
 	/**
-	 * MSB, LSB mixup, flip the bytes around
+	 * MSB, LSB mixup, flip the BYTES around
 	 *
 	 * @param unordered
 	 * @return flipped
