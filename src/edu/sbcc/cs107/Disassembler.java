@@ -37,6 +37,24 @@ public class Disassembler {
 	final String REV = "1011101000"; //A7-363 T1
 	final int machineCodeTerminate_0xE7FE = 59390;
 
+	HashMap<String, String> mnemonicCodes;
+	//public Disassembler(HashMap<String, String> mnemonicCodes){
+	public Disassembler(){
+		mnemonicCodes = new HashMap<String, String>();
+		this.mnemonicCodes = mnemonicCodes;
+		setMnemonicCodes();
+	}
+
+	public void setMnemonicCodes() {
+		mnemonicCodes.put("ADCS", "0100000101");
+		mnemonicCodes.put("ADDS" , "0001110");
+		mnemonicCodes.put("CMN" , "0100001011");
+		mnemonicCodes.put("LDRSB" , "0101011");
+		mnemonicCodes.put("MOVS_reg" , "0000000000"); // check names
+		mnemonicCodes.put("MOVS_imm", "00100"); // check names
+		mnemonicCodes.put("REV" , "1011101000");
+	}
+
 	/**
 	 * Extracts the register operand from a halfword.
 	 * 
@@ -118,6 +136,13 @@ public class Disassembler {
 	 * @return Formatted string containing the mnemonic and any operands.
 	 */
 	public String dissassembleToString(Halfword hw) {
+		String mnemonic = "";
+		StringBuilder tmp = new StringBuilder();
+		tmp = tmp.append(mnemonic)
+				.append( "     ")
+				.append(getRegister(hw, 0,1))
+				.append(", ")
+				.append(getRegister(hw, 0,1));
 
 		return "ADCS     r6, r0";
 	}
