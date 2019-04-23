@@ -5,8 +5,11 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 import static org.apache.commons.io.FileUtils.*;
+import java.util.ListIterator;
+import java.util.List;
 
 /**
  * @author Leonard Euler
@@ -21,11 +24,13 @@ public class HexFile {
 	 * This is where you load the hex file.
 	 * By making it an ArrayList you can easily traverse it in order.
 	 */
-	private ArrayList<String> hexFile = null; // not fully constructed
-	
-	/* Add */
-	// which variables should i put here?
-
+	private ArrayList<String> hexFile = null; // full arry w all lines
+	private ArrayList<String> hexFileTypeData = null; // ALL type: Data
+	private ArrayList<Halfword> halfWords = null;
+	private static int hwBytes = 2; // two bytes
+	private static int wordBytes = 4; // four bytes
+	private static int wordChars = 8; // eight hex chars in word
+	private int pos = 0; // called by getNextHW, tracks halfWords
 
 	/**
 	 * Constructor that loads the .hex file.
@@ -34,26 +39,23 @@ public class HexFile {
 	 * @throws FileNotFoundException
 	 */
 	public HexFile(String hexFileName) throws FileNotFoundException {
-		// open up "sample1.hex"
-		// turn contents into str, parse
-		// add to arrayList
 		try {
 			File file = new File(hexFileName);
 			String longText = FileUtils.readFileToString(file, "UTF-8");
-			System.out.print(";)");
-			System.out.print(longText);
 
+			String[] arrayOfLines = longText.split("\\r?\\n");
+			hexFile = new ArrayList<String>();
 
+			for(String line : arrayOfLines){
+				hexFile.add(line); // arrayList w/ strings of which are tbd to live
+			}
 
-
-			
+			hexFileTypeData = makeHexFileTypeData(); // ArrayList<String> hexFileTypeData
+			halfWords = makeHalfWords(); // ArrayList<Halfword> halfWords
 		}
 		catch (Exception IO){
 			System.out.println(IO.getMessage());
 		}
-
-
-
 	}
 
 	/**
@@ -151,14 +153,117 @@ public class HexFile {
 	 * When finished processing null is returned.
 	 * 
 	 * @return Next halfword.
+	 *
+	 * Notes:
+	 *
+	 * 		// hf.getNextHalfword().toString()
+	 *
+	 * IN:
+	 * 		[HEX FILE: ] (max length: 42 chars + : )
+	 *
+	 *
+	 * 		absolute vs offset (0000) for this one below, hmmm
+	 * 		:02(0000)(04)(0000)(FA) _extnededLinearAddress (skip because of type)
+	 * 		:10(0000)(00)[00040010-E5000000-E9000000-EB000000]23 _dataRecord		[*,~ - #,! - @,^ - +,&]
+	 * 		:10(0010)(00)[ED000000-EF000000-F1000000-9EF3FFEF]94 				[%,{} - ...]
+	 * 		:10(0020)(00)[00000000-00000000-00000000-F3000000]DD
+	 * 		:10(0030)(00)[F5000000-00000000-F7000000-F9000000]DB
+	 * 													...etc
+	 *
+	 *
+	 * OUT:
+	 * 		hw - Halfword(int address, int data)
+	 *
+	 * 	   Expected:
+	 * 					-Address	 (16^0 * xBytes)-
+	 * 					"00000000 0400"		*
+	 * 					"00000002 1000"		~
+	 * 					"00000004 00E5"		#
+	 * 					"00000006 0000"		!
+	 * 					"00000008 00E9"		@
+	 * 					"0000000A 0000"		^
+	 * 					"0000000C 00EB"		+
+	 * 					"0000000E 0000"		&
+	 *
+	 * 					"00000010 00ED"		%
+	 * 					"00000012 0000"		{}
 	 */
 	public Halfword getNextHalfword() {
-		// find way to access file
-		// take line by line, search for record type: 00-data
-		//		add "data" to arrayList
-		//		anything else, toss
+		Halfword hw = halfWords.get(pos);
+		pos++;
+		return hw;
+	}
 
+	/**
+	 * Our HexFile is an arrayList of strings of MANY TYPES
+	 * We need new arrayList to have just type: DATA
+	 *
+	 */
+	public ArrayList<String> makeHexFileTypeData(){
+		String typeData = "00";
+		hexFileTypeData = new ArrayList<String>();
 
-		return null;
+		for(int i = 0; i < hexFile.size(); i++){
+				String lineOf = hexFile.get(i);
+				String typeCheck = lineOf.substring(7,9);
+				if(typeCheck.equals(typeData)){
+					hexFileTypeData.add(lineOf);
+					//System.out.println(lineOf);
+				}
+		}
+		return hexFileTypeData;
+	}
+
+	/**
+	 * Gets all the data, too much!!!!
+	 *
+	 *
+	 * @param data_hexStr (one line).
+	 * @return data_dec decimal format
+	 */
+	public int getBaseTenData(String data_hexStr){
+		int data_dec = Integer.parseInt(data_hexStr, 16);
+
+		return data_dec;
+	}
+
+	/**
+	 * Make arrayList of halfWords from hexFileTypeData
+	 *
+	 */
+	public ArrayList<Halfword> makeHalfWords() {
+		int start = 0;
+		String data = "";
+		int offset = 0;
+		int jump = 0; // halfWord jumps
+		halfWords = new ArrayList<Halfword>();
+
+		for(int row = 0; row < hexFileTypeData.size(); row++) {
+			start = getAddressOfRecord(hexFileTypeData.get(row));
+			for(int col = 0; col < wordChars; col++) {
+				offset = col * hwBytes;
+				jump = col * wordBytes;
+				data = flip(hexFileTypeData.get(row).substring(9+jump, 13+jump));
+				Halfword hw = new Halfword(start + offset, getBaseTenData(data));
+				halfWords.add(hw);
+			}
+		}
+		return halfWords;
+	}
+
+	/**
+	 * MSB, LSB mixup, flip the BYTES around
+	 *
+	 * @param unordered
+	 * @return flipped
+	 */
+	public String flip(String unordered){
+		String flipped = "";
+		String beg = unordered.substring(0,2);
+		String end = unordered.substring(2,4);
+
+		flipped = end + beg;
+
+		return flipped;
 	}
 }

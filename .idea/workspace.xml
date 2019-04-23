@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="264b9176-cf81-4704-98b7-8494d02bbc49" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unittest/cs107/DisassemblerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="170" lean-forward="true" selection-end-line="170" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#Disassembler#0" />
+                <element signature="docComment;method#getRegister#0;class#Disassembler#0" />
+                <element signature="method#getRegister#0;class#Disassembler#0" />
+                <element signature="docComment;method#getImmediate#0;class#Disassembler#0" />
+                <element signature="method#getImmediate#0;class#Disassembler#0" />
+                <element signature="docComment;method#order#0;class#Disassembler#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Halfword.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="19" column="23" lean-forward="true" selection-end-line="117" />
+              <folding>
+                <element signature="docComment;class#Halfword#0" />
+                <element signature="docComment;method#Halfword#0;class#Halfword#0" />
+                <element signature="docComment;method#toString#0;class#Halfword#0" />
+                <element signature="method#toString#0;class#Halfword#0" />
+                <element signature="docComment;method#getAddress#0;class#Halfword#0" />
+                <element signature="docComment;method#getData#0;class#Halfword#0" />
+                <element signature="docComment;method#makeAddressStr#0;class#Halfword#0" />
+                <element signature="method#makeAddressStr#0;class#Halfword#0" />
+                <element signature="docComment;method#makeDataStr#0;class#Halfword#0" />
+                <element signature="method#makeDataStr#0;class#Halfword#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/HexFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="233" column="47" selection-start-line="233" selection-start-column="47" selection-end-line="233" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#HexFile#0" />
+                <element signature="docComment;field#hexFile#0;class#HexFile#0" />
+                <element signature="docComment;method#HexFile#0;class#HexFile#0" />
+                <element signature="method#HexFile#0;class#HexFile#0" />
+                <element signature="docComment;method#getDataBytesOfRecord#0;class#HexFile#0" />
+                <element signature="method#getDataBytesOfRecord#0;class#HexFile#0" />
+                <element signature="docComment;method#getAddressOfRecord#0;class#HexFile#0" />
+                <element signature="method#getAddressOfRecord#0;class#HexFile#0" />
+                <element signature="docComment;method#getRecordType#0;class#HexFile#0" />
+                <element signature="method#getRecordType#0;class#HexFile#0" />
+                <element signature="docComment;method#getNextHalfword#0;class#HexFile#0" />
+                <element signature="method#getNextHalfword#0;class#HexFile#0" />
+                <element signature="docComment;method#getBaseTenData#0;class#HexFile#0" />
+                <element signature="method#getBaseTenData#0;class#HexFile#0" />
+                <element signature="docComment;method#makeHalfWords#0;class#HexFile#0" />
+                <element signature="method#makeHalfWords#0;class#HexFile#0" />
+                <element signature="docComment;method#flip#0;class#HexFile#0" />
+                <element signature="method#flip#0;class#HexFile#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <folding>
+                <element signature="docComment;class#Main#0" />
+                <element signature="docComment;method#main#0;class#Main#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample1.hex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/out</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/edu/sbcc/cs107/Main.java" />
+        <option value="$USER_HOME$/Documents/hello-180/hello.html.txt" />
+        <option value="$PROJECT_DIR$/src/edu/sbcc/cs107/Halfword.java" />
+        <option value="$PROJECT_DIR$/src/edu/sbcc/cs107/HexFile.java" />
+        <option value="$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="DisassemblerTest" />
+    </enabled-run-configurations>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1276" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Problems'; set:Problems; class com.intellij.psi.search.scope.ProblemsScope">
+          <expand>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="sbcc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="sbcc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cs107" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.sbcc.cs107" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="616d4139:PackageViewModuleNode" />
+              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="l01-disassembler-CastleBomber-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="l01-disassembler-CastleBomber-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cs107" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555979662691" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="DisassemblerTest" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="DisassemblerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="l01-disassembler-CastleBomber-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unittest.cs107.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unittest.cs107" />
+      <option name="MAIN_CLASS_NAME" value="unittest.cs107.DisassemblerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DisassemblerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="264b9176-cf81-4704-98b7-8494d02bbc49" name="Default Changelist" comment="" />
+      <created>1549322244717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549322244717</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added apache jars&#10;learned about: CLASSPATHS, libraries, &amp;&amp; dependencies">
+      <created>1550792214566</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550792214567</updated>
+    </task>
+    <task id="LOCAL-00002" summary="making progress, 7/20 points">
+      <created>1552008086932</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552008086937</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="DisassemblerTest - 2019.03.08 at 15h 38m 48s.xml">
+      <configuration name="DisassemblerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DisassemblerTest - 2019.03.08 at 15h 39m 35s.xml">
+      <configuration name="DisassemblerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DisassemblerTest - 2019.03.08 at 15h 43m 10s.xml">
+      <configuration name="DisassemblerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DisassemblerTest - 2019.03.08 at 15h 43m 13s.xml">
+      <configuration name="DisassemblerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DisassemblerTest - 2019.03.08 at 15h 47m 07s.xml">
+      <configuration name="DisassemblerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DisassemblerTest - 2019.03.08 at 15h 48m 23s.xml">
+      <configuration name="DisassemblerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DisassemblerTest - 2019.03.08 at 15h 49m 41s.xml">
+      <configuration name="DisassemblerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DisassemblerTest - 2019.03.08 at 15h 50m 40s.xml">
+      <configuration name="DisassemblerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DisassemblerTest - 2019.03.08 at 16h 06m 51s.xml">
+      <configuration name="DisassemblerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DisassemblerTest - 2019.04.22 at 17h 08m 30s.xml">
+      <configuration name="DisassemblerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="23" width="1276" height="777" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2530253" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.19124088" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32846716" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49919224" visible="true" weight="0.3678832" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50080776" side_tool="true" weight="0.39178082" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.15328467" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.25693431" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2530253" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.19124088" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32846716" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49919224" weight="0.3678832" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50080776" side_tool="true" weight="0.39178082" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.15328467" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.25693431" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added apache jars&#10;learned about: CLASSPATHS, libraries, &amp;&amp; dependencies" />
+    <MESSAGE value="making progress, 7/20 points" />
+    <option name="LAST_COMMIT_MESSAGE" value="making progress, 7/20 points" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/edu/sbcc/cs107/HexFile.java</url>
+          <line>234</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Documents/hello-180/hello.html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-io-2.6.jar!/org/apache/commons/io/FilenameUtils.class" />
+    <entry file="jar://$USER_HOME$/apache-maven-3.5.2/lib/commons-io-2.5.jar!/org/apache/commons/io/FileUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-381">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#17444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="582" selection-start-line="582" selection-end-line="582" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1962" selection-start-line="1962" selection-end-line="1962" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/HexFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="233" column="47" selection-start-line="233" selection-start-column="47" selection-end-line="233" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#HexFile#0" />
+            <element signature="docComment;field#hexFile#0;class#HexFile#0" />
+            <element signature="docComment;method#HexFile#0;class#HexFile#0" />
+            <element signature="method#HexFile#0;class#HexFile#0" />
+            <element signature="docComment;method#getDataBytesOfRecord#0;class#HexFile#0" />
+            <element signature="method#getDataBytesOfRecord#0;class#HexFile#0" />
+            <element signature="docComment;method#getAddressOfRecord#0;class#HexFile#0" />
+            <element signature="method#getAddressOfRecord#0;class#HexFile#0" />
+            <element signature="docComment;method#getRecordType#0;class#HexFile#0" />
+            <element signature="method#getRecordType#0;class#HexFile#0" />
+            <element signature="docComment;method#getNextHalfword#0;class#HexFile#0" />
+            <element signature="method#getNextHalfword#0;class#HexFile#0" />
+            <element signature="docComment;method#getBaseTenData#0;class#HexFile#0" />
+            <element signature="method#getBaseTenData#0;class#HexFile#0" />
+            <element signature="docComment;method#makeHalfWords#0;class#HexFile#0" />
+            <element signature="method#makeHalfWords#0;class#HexFile#0" />
+            <element signature="docComment;method#flip#0;class#HexFile#0" />
+            <element signature="method#flip#0;class#HexFile#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample1.hex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="docComment;class#Main#0" />
+            <element signature="docComment;method#main#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/cs107/DisassemblerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Disassembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="170" lean-forward="true" selection-end-line="170" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Disassembler#0" />
+            <element signature="docComment;method#getRegister#0;class#Disassembler#0" />
+            <element signature="method#getRegister#0;class#Disassembler#0" />
+            <element signature="docComment;method#getImmediate#0;class#Disassembler#0" />
+            <element signature="method#getImmediate#0;class#Disassembler#0" />
+            <element signature="docComment;method#order#0;class#Disassembler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/sbcc/cs107/Halfword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="19" column="23" lean-forward="true" selection-end-line="117" />
+          <folding>
+            <element signature="docComment;class#Halfword#0" />
+            <element signature="docComment;method#Halfword#0;class#Halfword#0" />
+            <element signature="docComment;method#toString#0;class#Halfword#0" />
+            <element signature="method#toString#0;class#Halfword#0" />
+            <element signature="docComment;method#getAddress#0;class#Halfword#0" />
+            <element signature="docComment;method#getData#0;class#Halfword#0" />
+            <element signature="docComment;method#makeAddressStr#0;class#Halfword#0" />
+            <element signature="method#makeAddressStr#0;class#Halfword#0" />
+            <element signature="docComment;method#makeDataStr#0;class#Halfword#0" />
+            <element signature="method#makeDataStr#0;class#Halfword#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.6 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>l01-disassembler-CastleBomber-master</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>commons-lang3-3.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
